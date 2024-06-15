@@ -1,9 +1,17 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 
+onMounted(() => {
+  // const VITE_APP_SCRIPT = (window as any).APP_CONFIG.VITE_APP_SCRIPT;
+  // VITE_APP_SCRIPT;
+});
 </script>
 
 <template>
-  <h1>Test</h1>
+   <main>
+    <h1>App.Vue</h1>
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
