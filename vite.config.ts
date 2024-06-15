@@ -4,6 +4,7 @@ import { defineConfig, Plugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dotenv from 'dotenv';
 import path from 'path';
+import VueRouter from 'unplugin-vue-router/vite'
 
 const envPath = path.resolve(process.cwd(), `.env.${process.env.NODE_ENV}`);
 console.log(`The current NODE_ENV is: ${process.env.NODE_ENV}`);
@@ -28,6 +29,7 @@ apiKeVITE_APP_SCRIPTy: process.env.VITE_APP_SCRIPT
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    VueRouter(),
     vue(),
     injectHtmlPlugin
   ],
