@@ -1,5 +1,6 @@
 import HomeView from '@/views/HomeView.vue'
-import ProjectsView from '@/views/ProjectsView.vue'
+import { h } from 'vue'
+// import ProjectsView from '@/views/ProjectsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -14,7 +15,18 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'project',
-      component: ProjectsView
+      component: () => import('@/views/ProjectsView.vue')
+      //Manages bundle size with lazy load
+    },
+    {
+      path: '/projects/:id',//:id is now a wildcard, can be /7213721 or /djsfhusijdh_hy
+      name: 'single-project',
+      component: () => import('@/views/SingleProjectView.vue')
+    },
+    {
+      path: '/:catchAll(.*)*', //Matches with any permutations outhere
+      name: 'catch-all',
+      component: h('p', { style: 'color: red;' }, '404 Not Found') //Mock up Hypertext HTML AKA Inline HTML
     }
   ]
 })
