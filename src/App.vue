@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import { supabase } from '@/lib/supabaseClient.ts'
 // import HomeView from '@/views/HomeView.vue'
+
+console.log(supabase)
 
 onMounted(() => {
   // const VITE_APP_SCRIPT = (window as any).APP_CONFIG.VITE_APP_SCRIPT;
