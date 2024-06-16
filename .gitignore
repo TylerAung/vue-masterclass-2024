@@ -29,4 +29,10 @@ coverage
 
 *.tsbuildinfo
 
+# Ignore .env files
 .env
+.env.development
+.env.production
+
+# Don't ignore .env.example
+!.env.example
