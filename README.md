@@ -1,24 +1,30 @@
-Heading	
+Heading
+
 # H1
+
 ## H2
+
 ### H3
-Bold	**bold text**
 
-Italic	*italicized text*
+Bold **bold text**
 
-Blockquote	> blockquote
+Italic _italicized text_
 
-Ordered List	
+Blockquote > blockquote
+
+Ordered List
+
 1. First item
 2. Second item
 3. Third item
 
-Unordered List	
+Unordered List
+
 - First item
 - Second item
 - Third item
 
-Code	`code`
+Code `code`
 
 ```
 {
@@ -71,13 +77,13 @@ index 309ee57..c995021 100644
 
 $\color{Aquamarine}{The\ quick\ brown\ fox\ jumps\ over\ the\ lazy\ dog.}$
 
-Horizontal Rule	---
+Horizontal Rule ---
 
-Link	[title](https://www.example.com)
+Link [title](https://www.example.com)
 
-Image	![alt text](image.jpg)
+Image ![alt text](image.jpg)
 
-	I need to highlight these ==very important words==.
+    I need to highlight these ==very important words==.
 
 # vue-masterclass-2024
 
@@ -119,8 +125,8 @@ npm run build
 npm run lint
 ```
 
-
 # Folder Structure
+
 ```
 vscode --> Config Files Relevent to Project
 node_modules --> Project dependencies
@@ -134,3 +140,18 @@ views --> Holds main views/pages what user will see
 src\main.ts --> Initialize Vue app, importing all necessary pieces and gets things running.
 index.html --> References main.ts directly in documents body, kicking off vue app
 ```
+
+```
+Interesting Home Page Inspiration
+https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+Text Art
+
+
+https://izacfe.github.io/izac-dev
+https://github.com/IzacFE/izacFe.github.io/blob/main/index.html
+```
+
+### Env Example
+
+.env.example
+Serves as placeholder file with all the necessary env key and sample values needed in a project .env to start up
